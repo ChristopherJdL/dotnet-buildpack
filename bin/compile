@@ -143,8 +143,8 @@ export PATH="${PROJECT_DIR}/node_modules/.bin:${PATH}"
 echo "Publishing the app"
 # Publish to heroku_output
 dotnet publish ${PROJECT_JSON_FILE} --output ${BUILD_DIR}/heroku_output --configuration ${CORE_CONFIGURATION}
-cp $PROJECT_DIR/appSettings.json ${BUILD_DIR}/heroku_output
-
+cp $PROJECT_DIR/ambiances.json ${BUILD_DIR}/heroku_output
+echo "Copied ambiances"
 echo "Publish Succeeded"
 
 mkdir -p ${BUILD_DIR}/.profile.d
