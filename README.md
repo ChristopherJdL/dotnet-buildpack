@@ -2,7 +2,11 @@
 
 # ASP.NET Core Buildpack
 
+> :warning: This buildpack especially builds my final studies project, Get A Way
+
 This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpack) for building [ASP.NET Core](https://docs.asp.net/en/latest/conceptual-overview/aspnet.html) apps using [`project.json` files](https://github.com/aspnet/Home/wiki/Project.json-file) and the [.NET CLI](https://github.com/dotnet/cli).
+
+
 
 ## Usage
 
