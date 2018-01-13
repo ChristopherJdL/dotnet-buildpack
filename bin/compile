@@ -56,6 +56,9 @@ then
 	fi
 fi
 
+# Attempt to fix segmentation fault
+mv /usr/lib/x86_64-linux-gnu/libssl3.so  /usr/lib/x86_64-linux-gnu/libssl3.so.old
+
 # Install .NET Core
 echo "Get .NET Core Version and Channel from the PROJECT"
 DEPLOYMENT_FILE_LOCATION=${SRC_DIR}/.deployment
