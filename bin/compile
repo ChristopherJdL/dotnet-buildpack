@@ -96,8 +96,9 @@ fi
 
 : ${CORE_DOWNLOAD_LOCATION:="https://dotnetcli.blob.core.windows.net/dotnet/${CORE_CHANNEL}/Binaries/${CORE_VERSION_FIRST}/dotnet-dev-ubuntu-x64.${CORE_VERSION}.tar.gz"}
 
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
 echo "Installing the dependencies"
-apt_install libunwind8 gettext libssl1.0.2
+apt_install libunwind8 gettext
 
 mkdir -p ${BUILD_DIR}/dotnet
 
